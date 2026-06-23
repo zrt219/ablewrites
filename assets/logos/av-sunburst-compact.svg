@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AV Sunburst Compact logo concept</title>
+  <desc id="desc">A favicon-friendly geometric sunburst with short controlled wavy rays.</desc>
+  <g fill="none" stroke="#17263a" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="256" r="80" stroke-width="5.5"/>
+    <circle cx="256" cy="256" r="18" stroke="#e9a27f" stroke-width="4"/>
+    <g stroke-width="4.5">
+      <path d="M256 91c-6 19-6 38 0 56"/>
+      <path d="M352 124c-14 13-23 29-27 48"/>
+      <path d="M420 206c-19 0-36 7-51 20"/>
+      <path d="M420 306c-19-2-37 4-52 17"/>
+      <path d="M352 388c-15-13-24-30-27-49"/>
+      <path d="M256 421c7-18 7-38 0-56"/>
+      <path d="M160 388c14-13 23-30 27-49"/>
+      <path d="M92 306c19-2 37 4 52 17"/>
+      <path d="M92 206c19 0 36 7 51 20"/>
+      <path d="M160 124c14 13 23 29 27 48"/>
+    </g>
+  </g>
+</svg>

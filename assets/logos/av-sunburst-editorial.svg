@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AV Sunburst Editorial logo concept</title>
+  <desc id="desc">A refined thin-line sunburst with a clean circular core and controlled wavy rays.</desc>
+  <g fill="none" stroke="#17263a" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke-width="5" d="M256 174c51 0 84 33 84 84s-33 84-84 84-84-33-84-84 33-84 84-84Z"/>
+    <g stroke-width="4">
+      <path d="M257 78c-9 18-7 42 1 58"/>
+      <path d="M319 94c-3 19-11 34-25 47"/>
+      <path d="M395 137c-19 8-33 22-41 41"/>
+      <path d="M435 220c-19-5-38-3-56 8"/>
+      <path d="M429 306c-20-6-37-2-53 12"/>
+      <path d="M369 394c-19-8-32-22-37-42"/>
+      <path d="M256 435c8-21 7-43-1-59"/>
+      <path d="M139 395c21-11 33-25 39-44"/>
+      <path d="M82 309c22-6 39-2 54 10"/>
+      <path d="M79 221c20-7 40-4 57 8"/>
+      <path d="M117 137c20 9 34 23 42 41"/>
+      <path d="M194 93c4 20 11 35 25 48"/>
+    </g>
+    <path stroke="#e9a27f" stroke-width="3.5" d="M166 151c14-22 34-40 58-51"/>
+  </g>
+</svg>

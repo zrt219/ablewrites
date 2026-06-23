@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listen | Able</title>
+    <link rel="canonical" href="https://ablewrites.vercel.app/listen" />
+    <meta property="og:url" content="https://ablewrites.vercel.app/listen" />
+    <link rel="icon" type="image/png" href="assets/logos/av-sunburst-logo-refined-navy.png" />
+    <link rel="apple-touch-icon" href="assets/logos/av-sunburst-logo-refined-navy.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260617-header-scroll" />
+  </head>
+  <body class="contact-page" data-theme="light">
+    <div class="construction-notice" role="status" aria-live="polite">
+      <span>Still under construction!</span>
+      <button class="construction-close" type="button" aria-label="Close construction notice">X</button>
+    </div>
+
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="home" aria-label="Able home">
+        <img
+          class="brand-mark theme-image"
+          src="assets/logos/av-sunburst-logo-refined-navy.png"
+          data-dark-src="assets/logos/av-sunburst-logo-refined-cream.png"
+          data-light-src="assets/logos/av-sunburst-logo-refined-navy.png"
+          alt=""
+        />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="home">Home</a>
+        <a href="https://on.soundcloud.com/iNALvs6xsLyuDGT5rb">Listen</a>
+        <a href="home#subscribe">Subscribe</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="true">
+          <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+          <span class="theme-toggle-text">Dark</span>
+        </button>
+        <a class="outline-button" href="contact">Contact</a>
+      </div>
+    </header>
+
+    <main class="contact-main">
+      <section class="listen-shell" aria-labelledby="listen-title">
+        <div class="listen-card">
+          <p class="eyebrow">Private Listen</p>
+          <h1 id="listen-title">Quintet in C Major</h1>
+          <p class="intro">Use the player below to listen to the piece.</p>
+          <p class="locked-message" data-locked-message>
+            This listening page is locked. Return home and enter the password when prompted.
+          </p>
+          <audio class="audio-player" controls preload="metadata" hidden data-protected-audio></audio>
+        </div>
+      </section>
+    </main>
+
+    <script src="site.js?v=piece-access"></script>
+    <script src="listen.js?v=piece-access"></script>
+  </body>
+</html>

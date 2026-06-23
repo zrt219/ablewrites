@@ -1,0 +1,10 @@
+# Local reference image used during design
+ChatGPT Image May 20, 2026, 10_30_24 PM.png
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Vercel local project metadata
+.vercel/
