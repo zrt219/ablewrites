@@ -1,4 +1,5 @@
 :root {
+  color-scheme: dark;
   --ink: #f7eee9;
   --muted: #c7cad8;
   --soft: rgba(247, 238, 233, 0.66);
@@ -36,7 +37,8 @@
   --footer-line: rgba(247, 238, 233, 0.12);
 }
 
-body[data-theme="light"] {
+:root[data-theme="light"] {
+  color-scheme: light;
   --ink: #203044;
   --muted: #5c6672;
   --soft: rgba(32, 48, 68, 0.62);
@@ -117,10 +119,6 @@ img {
 
 .theme-image {
   transition: opacity 220ms ease;
-}
-
-body.is-theme-switching .theme-image {
-  opacity: 0.82;
 }
 
 .construction-notice {
@@ -281,7 +279,7 @@ body.is-theme-switching .theme-image {
   transition: transform 180ms ease;
 }
 
-body[data-theme="light"] .toggle-thumb {
+:root[data-theme="light"] .toggle-thumb {
   transform: translateX(16px);
 }
 

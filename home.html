@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (() => {
+        const requested = new URLSearchParams(window.location.search).get("theme");
+        let theme = requested === "light" || requested === "dark" ? requested : null;
+
+        if (!theme) {
+          try {
+            const savedTheme = window.localStorage.getItem("av-theme-preference");
+            theme = savedTheme === "light" || savedTheme === "dark" ? savedTheme : null;
+          } catch (_error) {
+            // Storage can be unavailable in private or locked-down browsers.
+          }
+        }
+
+        const activeTheme = theme === "dark" ? "dark" : "light";
+        document.documentElement.dataset.theme = activeTheme;
+        document.documentElement.style.colorScheme = activeTheme;
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Able</title>
     <link rel="canonical" href="https://ablewrites.vercel.app/home" />
     <meta property="og:url" content="https://ablewrites.vercel.app/home" />
-    <link rel="icon" type="image/png" href="assets/logos/av-sunburst-logo-refined-navy.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/logos/av-favicon.svg" />
     <link rel="apple-touch-icon" href="assets/logos/av-sunburst-logo-refined-navy.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +33,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260617-header-scroll" />
+    <link rel="stylesheet" href="styles.css?v=theme-stability-20260623b" />
   </head>
   <body data-theme="light">
     <div class="construction-notice" role="status" aria-live="polite">
@@ -34,7 +53,7 @@
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="home">Home</a>
-        <a href="https://on.soundcloud.com/iNALvs6xsLyuDGT5rb">Listen</a>
+        <a href="https://soundcloud.com/ablewrites">Listen</a>
         <a href="home#subscribe">Subscribe</a>
       </nav>
       <div class="header-actions">
@@ -145,6 +164,6 @@
       <p class="copyright">@2026 ABLE</p>
     </footer>
 
-    <script src="site.js?v=piece-access"></script>
+    <script src="site.js?v=theme-stability-20260623b"></script>
   </body>
 </html>
