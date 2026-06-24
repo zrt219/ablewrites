@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Able favicon</title>
+  <desc id="desc">A white-backed Able sunburst favicon for improved visibility in browser tabs.</desc>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#ffffff" stroke="#17263a" stroke-width="2.5"/>
+  <g fill="none" stroke="#17263a" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="32" r="10" stroke-width="2.4"/>
+    <g stroke-width="2.5">
+      <path d="M32 12v8"/>
+      <path d="M45.5 18.5l-5.6 5.6"/>
+      <path d="M52 32h-8"/>
+      <path d="M45.5 45.5l-5.6-5.6"/>
+      <path d="M32 52v-8"/>
+      <path d="M18.5 45.5l5.6-5.6"/>
+      <path d="M12 32h8"/>
+      <path d="M18.5 18.5l5.6 5.6"/>
+    </g>
+  </g>
+  <circle cx="32" cy="32" r="3.8" fill="#e9a27f"/>
+</svg>
