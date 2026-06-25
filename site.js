@@ -9,8 +9,6 @@
   const themedLinks = Array.from(document.querySelectorAll("a[href]"));
   const themedRedirectInputs = Array.from(document.querySelectorAll('input[name="_next"]'));
   const protectedListenLinks = Array.from(document.querySelectorAll("[data-protected-listen]"));
-  const constructionNotice = document.querySelector(".construction-notice");
-  const constructionClose = document.querySelector(".construction-close");
   const emailForms = Array.from(document.querySelectorAll("[data-email-form]"));
   const imageCache = new Map();
   const themeStorage = availableThemeStorage();
@@ -329,12 +327,6 @@
       unlockPiece(link);
     });
   });
-
-  if (constructionClose && constructionNotice) {
-    constructionClose.addEventListener("click", () => {
-      constructionNotice.classList.add("is-hidden");
-    });
-  }
 
   function setFormStatus(form, message, isError = false) {
     const status = form.querySelector(".form-status");
