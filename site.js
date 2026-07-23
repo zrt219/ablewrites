@@ -322,7 +322,8 @@
               <span class="floating-player-icon">${iconSvg("next")}</span>
             </button>
           </div>
-          <p class="floating-player-status" data-player-status aria-live="polite">Ready to play ${trackTitle}.</p>
+          <p class="floating-player-status">@2026 ABLE. All Rights Reserved</p>
+          <span class="floating-player-live-status" data-player-status aria-live="polite"></span>
         </div>
       </div>
       <button class="floating-player-launcher" type="button" data-player-launcher aria-label="Open music player" hidden>

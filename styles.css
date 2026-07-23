@@ -1107,6 +1107,19 @@ h1 .nowrap span {
   color: var(--peach);
 }
 
+.floating-player-live-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
 .floating-player-launcher {
   display: inline-flex;
   align-items: center;
