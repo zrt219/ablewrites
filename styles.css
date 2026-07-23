@@ -994,8 +994,7 @@ h1 .nowrap span {
 }
 
 .floating-player-volume-label span,
-.floating-player-kicker,
-.floating-player-link {
+.floating-player-kicker {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.24em;
@@ -1033,18 +1032,6 @@ h1 .nowrap span {
   font-size: clamp(28px, 4vw, 34px);
   font-weight: 500;
   line-height: 0.96;
-}
-
-.floating-player-meta-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 14px;
-}
-
-.floating-player-link {
-  color: var(--peach);
 }
 
 .floating-player-progress {
@@ -1229,8 +1216,7 @@ h1 .nowrap span {
 .floating-player-control:focus-visible,
 .floating-player-inline-button:focus-visible,
 .floating-player-launcher:focus-visible,
-.floating-player-volume-panel input[type="range"]:focus-visible,
-.floating-player-link:focus-visible {
+.floating-player-volume-panel input[type="range"]:focus-visible {
   outline: 2px solid var(--peach);
   outline-offset: 3px;
 }

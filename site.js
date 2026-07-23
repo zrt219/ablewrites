@@ -304,9 +304,6 @@
         <div class="floating-player-body">
           <p class="floating-player-kicker">Local player</p>
           <p class="floating-player-title" data-player-title>${trackTitle}</p>
-          <div class="floating-player-meta-row">
-            <a class="floating-player-link" data-player-link href="listen.html">Open listen page</a>
-          </div>
           <div class="floating-player-progress" aria-hidden="true">
             <span class="floating-player-progress-fill" data-player-progress></span>
           </div>
@@ -386,7 +383,6 @@
       launcherFallback: playerRoot.querySelector("[data-player-launcher-fallback]"),
       title: playerRoot.querySelector("[data-player-title]"),
       launcherTitle: playerRoot.querySelector("[data-player-launcher-title]"),
-      link: playerRoot.querySelector("[data-player-link]"),
       progress: playerRoot.querySelector("[data-player-progress]"),
       status: playerRoot.querySelector("[data-player-status]"),
       statePill: playerRoot.querySelector("[data-player-state-pill]"),
@@ -423,15 +419,6 @@
       }
     }
 
-    function currentListenPageHref() {
-      const url = themedUrl("listen.html", activeTheme);
-      return url ? `${url.pathname}${url.search}${url.hash}` : "listen.html";
-    }
-
-    function updateListenLink() {
-      refs.link.href = currentListenPageHref();
-    }
-
     function setStatus(message, isError = false) {
       refs.status.textContent = message || "";
       refs.status.classList.toggle("is-error", isError);
@@ -461,7 +448,6 @@
       refs.launcherFallback.hidden = true;
       refs.launcherImage.src = track.cover;
       refs.launcherImage.alt = "";
-      updateListenLink();
     }
 
     function updateControls() {
@@ -697,9 +683,7 @@
     setMinimized(initialMinimized);
 
     return {
-      refreshTheme() {
-        updateListenLink();
-      },
+      refreshTheme() {},
     };
   }
 
