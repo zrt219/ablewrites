@@ -33,7 +33,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=theme-stability-20260623b" />
+    <link rel="stylesheet" href="styles.css?v=floating-player-20260723g" />
   </head>
   <body class="contact-page" data-theme="light">
     <header class="site-header" aria-label="Primary">
@@ -48,7 +48,7 @@
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="home">Home</a>
-        <a href="https://soundcloud.com/ablewrites">Listen</a>
+        <a href="listen.html">Listen</a>
         <a href="home#subscribe">Subscribe</a>
       </nav>
       <div class="header-actions">
@@ -63,18 +63,31 @@
     <main class="contact-main">
       <section class="listen-shell" aria-labelledby="listen-title">
         <div class="listen-card">
-          <p class="eyebrow">Private Listen</p>
-          <h1 id="listen-title">Quintet in C Major</h1>
-          <p class="intro">Use the player below to listen to the piece.</p>
-          <p class="locked-message" data-locked-message>
-            This listening page is locked. Return home and enter the password when prompted.
-          </p>
-          <audio class="audio-player" controls preload="metadata" hidden data-protected-audio></audio>
+          <p class="eyebrow">Listen</p>
+          <h1 id="listen-title">Two pieces available now.</h1>
+          <p class="intro">Play Waves and Bells below, or use the floating player throughout the site.</p>
+          <div class="listen-playlist" aria-label="Available tracks">
+            <article class="listen-track">
+              <img class="listen-track-cover" src="assets/covers/waves-cover.png" alt="Cover artwork for Waves" />
+              <div class="listen-track-copy">
+                <span class="listen-track-number">01</span>
+                <h2>Waves</h2>
+                <audio class="audio-player" controls preload="metadata" src="assets/audio/waves.mp3"></audio>
+              </div>
+            </article>
+            <article class="listen-track">
+              <img class="listen-track-cover" src="assets/covers/bells-cover.png" alt="Cover artwork for Bells" />
+              <div class="listen-track-copy">
+                <span class="listen-track-number">02</span>
+                <h2>Bells</h2>
+                <audio class="audio-player" controls preload="metadata" src="assets/audio/bells.mp3"></audio>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
-    <script src="site.js?v=theme-stability-20260623b"></script>
-    <script src="listen.js?v=piece-access"></script>
+    <script src="site.js?v=floating-player-20260723c"></script>
   </body>
 </html>
